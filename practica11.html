@@ -19,7 +19,7 @@ src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
 <div id="map"></div>
 <script type="text/javascript">
 function onEachFeature(feature, layer) {
-layer.bindPopup("ID: "+feature.id);
+layer.bindPopup(feature.properties.Nombre);
 };
 
 var avenidas = new XMLHttpRequest();
